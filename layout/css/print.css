@@ -1,0 +1,106 @@
+/* HTML tags : start */
+html, body, p, h1, h2, h3, h4, a, img, form, table, tr, td {
+        margin: 0;
+        padding: 0;
+        border: 0}
+html {height:100%;}
+body{font-family:Arial, Helvetica, sans-serif;min-height:100%;position:relative;min-width:990px;_width:expression(document.documentElement.clientWidth < 990 ? "990px" : "auto");}
+*html body{height:100%}
+body{behavior:url("csshover.htc");}
+/* HTML tags */
+h1{}
+
+@font-face {font-family: 'directrgregular';src: url('../fonts/direct-webfont.eot');src: url('../fonts/direct-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/direct-webfont.woff') format('woff'), url('../fonts/direct-webfont.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'directrgbold';src: url('../fonts/direct_bold-webfont.eot');src: url('../fonts/direct_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/direct_bold-webfont.woff') format('woff'), url('d../fonts/irect_bold-webfont.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'directcondensed';src: url('../fonts/direct_cond-webfont.eot');src: url('../fonts/direct_cond-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/direct_cond-webfont.woff') format('woff'), url('../fonts/direct_cond-webfont.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+
+.main-container{width:970px;margin:0 auto;padding-bottom:100px;overflow:hidden}
+a{text-decoration:none}
+
+h2{font-size:27px;font-family: 'directrgbold';padding-bottom:15px;font-weight:normal}
+h3{font-size:25px;font-family: 'directrgbold';padding-bottom:15px;font-weight:normal;line-height:27px;padding-right:300px;text-transform:uppercase}
+h4{font-size:20px;font-family: 'directrgregular';padding-bottom:15px;font-weight:normal;text-transform:uppercase}
+
+.header{height:150px;background:#fff;width:100%;box-sizing:border-box;position:relative;z-index:100;padding-top:30px}
+.slogan{float:left;width:300px;}
+.logo{float:right;width:300px;text-align:right}
+.print-btn-en {display:block; width:90px; height:32px; background:url('/layout/images/print-button-st-en.gif') no-repeat; 
+            color: #000; font-size: 14px; text-align:center; padding: 7px 9px; position: relative;
+            right: -204px; top: 85px;
+            }
+.print-btn-ru {display:block; width:90px; height:32px; background:url('/layout/images/print-button-st-ru.gif') no-repeat; 
+            color: #000; font-size: 14px; text-align:center; padding: 7px 9px; position: relative;
+            right: -195px; top: 52px;
+            }
+@media print
+{
+.print-btn-ru {display:none;}
+}
+.print-txt {margin:0 0 25px 0;border-bottom:1px solid #e5e5e5;padding-bottom:25px}
+
+.print-txt dl {font-size:12px;color:#666666;margin:0 0 20px 0;border-bottom:1px solid #e5e5e5;padding-bottom:25px}
+.print-txt dl dt {float:left;font-weight:bold;padding:1px 5px;width:120px;}
+.print-txt dl dd {margin:2px 0;padding:1px 0;}
+.print-txt p{font-size:14px;line-height:18px;padding-bottom:15px}
+.print-txt p a{color:#184e86;}
+
+.print-txt ul{margin:0 0 0 18px;padding:0;}
+.print-txt ul li{font-size:14px;line-height:18px;}
+.print-txt ul.speeker-list{margin:0;padding:0;list-style-type:none}
+.print-txt ul.speeker-list li{vertical-align:top;text-shadow:none;color:#000;position:relative;padding:0 0 5px 0}
+.print-txt ul.speeker-list li .name{text-shadow:none;color:#184e86;font-family: 'directrgbold';font-size:15px;text-transform:uppercase;display:block;padding-bottom:0px;}
+.print-txt ul.speeker-list li .desc{font-size:12px;font-style: italic; color: #555;padding: 0 0 5px 0;}
+.print-txt ul.speeker-list li .desc p{font-size:inherit}
+.print-txt ul.speeker-list li a{text-shadow:none;color:#184e86;font-family: 'directrgregular';font-size:20px;text-transform:uppercase;text-decoration:none}
+.print-txt ul.speeker-list li div{padding:5px 0 0 0}
+.print-txt ul.speeker-list li sup{color:#912f5a;font-size:30px;vertical-align:middle}
+
+.calendar-box{}
+.calendar-inner{width:970px;margin:0 auto;position:relative;margin:0 0 25px 0;padding-bottom:25px; border-bottom:1px solid #e5e5e5;}
+.calendar-inner .help{padding-bottom:40px}
+.calendar-inner .help span{margin-right:10px}
+.calendar-inner .help span img{vertical-align:middle;}
+.calendar-inner .help span a{color:#000;text-decoration:none;font-size:13px;font-style:italic;}
+.calendar-inner .title{font-family: 'directrgbold';text-transform:uppercase;font-size:34px;line-height:36px;color:#000;padding-bottom:30px}
+
+.calendar-inner table{border-collapse:collapse;width:100%;margin-bottom:20px}
+.calendar-inner table td{color:#000;font-size:14px;background:url(../images/td_sep_pr.png) top repeat-x;vertical-align:top;font-size:17px;width:370px;padding-right:20px}
+.calendar-inner table td:first-child{font-weight:bold;width:165px !important;padding-right:0}
+.calendar-inner table td:first-child span{padding-left:0}
+.calendar-inner table td a{font-weight:bold;color:#000}
+.calendar-inner table td a:hover{text-decoration:none}
+.calendar-inner table td span{float:left;background:#fff;padding:0 10px 10px 10px }
+.calendar-inner table.active td span a{text-decoration:none;color:#fff}
+.calendar-inner table td.last{width:20px !important;background:none;padding-right:0}
+.calendar-inner table td.last span{padding:0;}
+
+.calendar-inner table td + td + td {width: 400px; background: none; padding-right: 0;}
+.calendar-inner table td + td + td span{background: none; padding-right: 0;}
+
+.calendar-inner i a{display:block;width:16px;height:16px;float:right;}
+
+.calendar-inner .pos01 i{margin-top:5px;float:right}
+.calendar-inner .pos02 i{margin-top:5px;float:right}
+.calendar-inner .pos03 i{margin-top:5px;float:right}
+
+
+
+/* Content */
+
+/* Footer */
+#footer{position:absolute;bottom:0;height:100px;width:100%}
+.footer{padding:0 0 25px 0; /*padding:20px 0 25px 0;border-top:1px solid #e5e5e5;*/width:970px;margin:0 auto;}
+#footer table{border-collapse:collapse;width:100%;position:relative;z-index:10}
+#footer table td{vertical-align:top;color:#000;font-size:12px;line-height:17px;width:270px}
+#footer table td a{color:#000}
+#footer table td a:hover{text-decoration:none}
+#footer table td.last{width:220px;text-align:right}
+/* Footer */
+
+.clear{clear:both}
+* html .clearfix{height: 1%; overflow: visible;}
+*+html .clearfix{  min-height: 1%;}
+.clearfix { zoom: 1 }
+.clearfix:after {  content: "";   clear: both;  display: block;  width: 0; height: 0;  overflow: hidden;  font-size: 0;}
+
+.pos01{page-break-inside: avoid;}
