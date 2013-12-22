@@ -16,14 +16,34 @@ h1{}
 
 .main-container{padding-top:180px}
 
-.header{height:180px;background:#fff url(../images/header_right.png) right -5px no-repeat;width:100%;box-sizing:border-box;position:fixed;z-index:100;-moz-box-shadow: 10px 10px 20px 0 #000; -webkit-box-shadow: 10px 10px 20px 0 #000; box-shadow: 0px 0px 5px 0 #000;top:0}
-.header-inner{width:970px;margin:0 auto;padding-top:30px;background:url(../images/lang_bg.png) 92% -5px no-repeat;position:relative}
+.header{min-width:1000px;height:180px;background:#fff url(../images/header-r.png) right 30px no-repeat;width:100%;box-sizing:border-box;position:fixed;z-index:100;-moz-box-shadow: 10px 10px 20px 0 #000; -webkit-box-shadow: 10px 10px 20px 0 #000; box-shadow: 0px 0px 5px 0 #000;top:0}
+.header-inner{width:970px;margin:0 auto;padding-top:30px;position:relative}
 .slogan{float:left;width:300px;background:#fff;}
-.lang-box{float:right;width:300px;height:68px;text-align:right}
+.lang-box{
+  float: right;
+  width: 152px;
+  height: 97px;
+  text-align: right;
+  padding: 0 33px 0 0;
+  position: absolute;
+  right: 188px;
+  top: 0;
+  z-index: 2;
+}
 .lang-box img{vertical-align:middle}
-.lang-box a{color:#fff;font-size:12px;float:right;margin:26px 50px 0 5px}
+.lang-box a{
+  color: #fff;
+  font-size: 12px;
+  float: right;
+  margin: 56px 6px 0 5px;
+}
 .lang-box a:hover{text-decoration:none;}
-.lang-box span{position: absolute; top: 40px; right: -15px; width: 42px;}
+.lang-box span{
+  position: absolute;
+  top: 43px;
+  right: -19px;
+  width: 42px;
+}
 .lang-box span a{width:21px;height:21px;background:url(../images/soc.png) 0 0 no-repeat;margin:0px}
 .lang-box span a.fb{background-position:0 0}
 .lang-box span a.fb:hover{background-position:0 -21px}
@@ -34,11 +54,43 @@ h1{}
 .lang-box span a.yt{background-position:0 -126px}
 .lang-box span a.yt:hover{background-position:0 -147px}
 .lang-box a.act{text-decoration:none}
-.lang-box a.en{color:#1db09a}
+.lang-box a.en{}
 .lang-box a.en:hover{text-decoration:none;}
-.logo{margin:0 300px;text-align:center;background:#fff}
+.logo{margin:0 300px;text-align:center;position:relative;z-index:1;}
 
-.phone{color:#fff;position:absolute;top:45px;right:-180px;width:180px;text-align:right}
+.cat-link {
+  width: 160px;
+  position: absolute;
+  right: 343px;
+  top: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+  z-index: 4;
+}
+
+.cat-link a,
+.cat-link a:visited {
+  color:#1db09a;
+  border-bottom:1px dashed #1db09a;
+  text-decoration:none;
+}
+
+.cat-link a:hover {
+  border:none;
+}
+
+.phone{
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  right: 24px;
+  width: 130px;
+  text-align: right;
+  z-index: 3;
+}
 .phone span{color:#fff;font-size:15px;font-weight:bold;display:block}
 .phone a{color:#fff;font-size:12px;}
 .phone a:hover{text-decoration:none;}
@@ -1319,4 +1371,82 @@ border-bottom: 1px solid transparent;
   color:#33B097;
   font-weight:bold;
   font-style: normal;
+}
+
+.project-tabs {
+  margin:18px 0 0 0;
+}
+
+.project-tabs .tab {
+  font-size:12px;
+  font-weight:bold;
+  cursor:pointer;
+  padding:6px 12px 5px 12px;
+  float:left;
+  text-transform:uppercase;
+}
+
+.project-tabs .tab span {
+  color:#009793;
+  border-bottom:1px dashed #009793;
+}
+
+.project-tabs .act {
+  background:#f6f6f6 url(../images/tab-bg.png) 0 0 repeat-x;
+  cursor:default;
+}
+
+.project-tabs .act span {
+  color:#000;
+  border-bottom:none;
+}
+
+.project-tabs .tabs-content {
+  border:1px solid #e5e5e5;
+  padding:13px 18px;
+}
+
+.proj-list,
+.dev-list {
+  padding:0;
+  margin:0;
+}
+
+.proj-list li {
+  list-style: none;
+  padding: 0 0 0 23px;
+  background: url(../images/ico-proj.png) 0 2px no-repeat;
+  margin: 0 0 8px 0;
+}
+
+.proj-list .ttl a,
+.dev-list .ttl a,
+.proj-list .ttl,
+.dev-list .ttl {
+  font-weight:bold;
+  color:#000;
+  text-decoration:none;
+}
+
+.proj-list .cats {
+  font-style:italic;
+  color:#6b6b6b;
+}
+
+.proj-list .cats .alt {
+  color:#009793;
+}
+
+.dev-list li {
+  list-style: none;
+  padding: 0 0 0 23px;
+  background: url(../images/ico-dev.png) 0 2px no-repeat;
+  margin: 0 0 8px 0;
+}
+
+.dev-list .dev-descr {
+  color:#808080;
+  font-size:12px;
+  line-height:normal;
+  font-style:italic;
 }
