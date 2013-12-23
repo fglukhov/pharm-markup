@@ -2,30 +2,9 @@
 
 	$(document).ready(function(){
   
-  $(".tabbed-content").each(function() {
-    var tabs = $(this).children(".tabs").find(".tab");
-    var tabContents = $(this).children(".tabs-content").children(".tab-content");
-    
-    if (!tabs.hasClass("act")) {
-      tabs.first().addClass("act");
-    }
-    
-    tabContents.hide();
-    tabContents.filter("[rel='"+tabs.filter(".act").attr("rel")+"']").show();
-    
-    tabs.click(function() {
-      tabs.removeClass("act");
-      $(this).addClass("act");
-      
-      window.location.hash = $(this).attr("rel");
-      
-      tabContents.hide();
-      
-      tabContents.filter("[rel='"+$(this).attr("rel")+"']").fadeIn(250)
-      
-    });
-    
-  });
+  scriptsInit();
+  
+  
   
   
     // Переключение табов "Об участии"
@@ -513,3 +492,30 @@ $(".reg-box .send-b").live("click", function(){
 	}
 	return false;
 });
+
+function scriptsInit () {
+  $(".tabbed-content").each(function() {
+    var tabs = $(this).children(".tabs").find(".tab");
+    var tabContents = $(this).children(".tabs-content").children(".tab-content");
+    
+    if (!tabs.hasClass("act")) {
+      tabs.first().addClass("act");
+    }
+    
+    tabContents.hide();
+    tabContents.filter("[rel='"+tabs.filter(".act").attr("rel")+"']").show();
+    
+    tabs.off("click").on("click",function() {
+      tabs.removeClass("act");
+      $(this).addClass("act");
+      
+      window.location.hash = $(this).attr("rel");
+      
+      tabContents.hide();
+      
+      tabContents.filter("[rel='"+$(this).attr("rel")+"']").fadeIn(250)
+      
+    });
+    
+  });
+}
